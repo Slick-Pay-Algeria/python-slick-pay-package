@@ -1,0 +1,10 @@
+LICENSE.txt
+setup.cfg
+setup.py
+slick_pay.egg-info/PKG-INFO
+slick_pay.egg-info/SOURCES.txt
+slick_pay.egg-info/dependency_links.txt
+slick_pay.egg-info/top_level.txt
+slickpay/__init__.py
+slickpay/merchant.py
+slickpay/user.py
