@@ -138,7 +138,7 @@ class Transfer:
             'amount': amount
         }
         res = requests.post(url, headers=headers, data=data)
-        return res.content
+        return res.json()
 
     def createPayment(self, data):
         print(self)
@@ -210,7 +210,7 @@ class PaymentAggregation:
         headers = {"Authorization": f'{str(os.environ["public_key"])}', "Accept": "application/json"}
 
         res = requests.post(url, headers=headers, json=data)
-        return res.content
+        return res.json()
 
     def create(self, data):
         print(self)
@@ -282,7 +282,7 @@ class InvoiceTransfer:
             'amount': amount
         }
         res = requests.post(url, headers=headers, data=data)
-        return res.content
+        return res.json()
 
     def createInvoice(self, data):
         print(self)

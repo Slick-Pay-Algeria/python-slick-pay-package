@@ -28,7 +28,7 @@ class InvoiceTransferMerchant:
         headers = {"Authorization": f'{str(os.environ["public_key"])}', "Accept": "application/json"}
         res = requests.get(url, headers=headers)
 
-        return res.content
+        return res.json()
 
     def listInvoice(self, offset, page):
         print(self)
@@ -39,7 +39,7 @@ class InvoiceTransferMerchant:
         headers = {"Authorization": f'{str(os.environ["public_key"])}', "Accept": "application/json"}
         res = requests.get(url, headers=headers)
 
-        return res.content
+        return res.json()
 
     def updateInvoice(self, data, uid):
         print(self)

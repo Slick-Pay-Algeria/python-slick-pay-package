@@ -15,7 +15,7 @@
 # Installation
 Just run this command line :
 ```python
-  pip install slick-pay==0.2
+  pip install slick-pay==0.3
 
 ```
 # Configuration
